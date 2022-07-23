@@ -3,11 +3,8 @@ import { useRouter } from "next/router";
 import { useSession } from "next-auth/react";
 
 function Login({ providers }) {
-  const router = useRouter();
   const { data: session, status } = useSession();
-  if (session) {
-    router.push("/");
-  }
+
   return (
     <div className="flex flex-col items-center bg-black min-h-screen w-full justify-center">
       <img
