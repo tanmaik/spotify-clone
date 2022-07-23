@@ -1,16 +1,14 @@
 import Head from "next/head";
+import Sidebar from "../components/Sidebar";
 
 const Home = () => {
   return (
-    <div>
-      <Head>
-        <title>Spotify</title>
-      </Head>
-
+    <div className="bg-black h-screen overflow-hidden">
       <main>
-        {/* Sidebar */}
+        <Sidebar />
         {/* Center */}
       </main>
+
       <div>{/* Player */}</div>
     </div>
   );
